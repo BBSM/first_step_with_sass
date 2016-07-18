@@ -1,0 +1,233 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 15, 2016, 9:26:37 AM
+    Author     : dmarez
+*/
+
+body{
+    font-family: $roboto;
+}
+
+/* Parameters for the Nav */
+nav{
+    width: 100%;
+    h3{
+        font-weight: 700;
+        font-size: 2em;
+        text-align: $center;
+        padding-top: 24px;
+        padding-bottom: 28px;
+        border-right: 1px solid $white;
+    }
+    ul{
+        padding-top: 34px;
+        padding-bottom: 34px;
+        @media screen and (max-width: 1040px){
+            display: none;
+        }
+        li{
+            display: inline-block;
+            > a{
+                text-decoration: none;
+                font-weight: 400;
+                color: $listMenu;
+                padding-left: 20px;
+                &:hover{
+                    color: $hoverListMenu; 
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+/* Parameters for the Submenu (mobile and tablet) */
+#submenu{
+    width: 85%;
+    background-color: $colorMenu;
+    @media screen and (min-width: 1040px){
+        display: none;
+    }
+    img{
+        width: 2em;
+        padding: 24.3px;
+    }
+}
+
+/* Parameters for the div which contains the name of the website (top left) */
+#websiteName{
+    float: $left;
+    width: 20%;
+    background-color: $colorMenu;
+    @media screen and (max-width: 1040px){
+        display: none;
+    }
+}
+
+/* Parameters for the div which contains the menu links */
+#linkMenu{
+    float: $left;
+    width: 65%;
+    background-color: $colorMenu;
+}
+
+/* Parameters for the div which contains the user picture (top right) */
+#profilePicture{
+    float: $right;
+    width: 15%;
+    background-color: $colorMenu;
+    @media screen and (max-width: 600px){
+        padding-right: 20px; 
+    }
+    img{
+        @include radiusProfilePic();
+        @include imgCenter();
+        width: 4em;
+        height: 4em;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        &:hover{
+            @include rotationProfilePic();
+        }
+    }
+}
+
+/* First section of the home page. This section contains the best picture of the month (mountains) */
+#picUnderMenu{
+    width: $widthFull;
+    line-height: 0;
+    img{
+        @include fullWidthImg();
+        z-index: 3;
+        margin-top: -1px;
+    }
+}
+
+/* Second section of the home page. This section contains a big title Best picture of the month) */
+#secondSectionHome{
+    width: $widthFull;
+    background-color: #0A0A0A;
+    h1{
+        @include titleSection();
+        @include textCenterMobile();
+        color: white;
+    }
+}
+
+/* Class for the two paragraph into the thirdsection (just next to by Kim Hyung) */
+.paraThirdSectionHome{
+    width: 35%;
+    float: $left;
+    @media screen and (max-width: 800px){
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    p{
+        font-weight: 300;
+        padding-left: 20px;
+        padding-top: 60px;
+        padding-bottom: 40px;
+        @media screen and (max-width: 800px){
+            width: $widthFull;
+            padding-left: 0;
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }
+    }
+}
+
+/* Parameters for the third section of the home page (by Kim Hyung) */
+#thirdSectionHome{
+    background-color: $ultraLightGray;
+    #winnerPicMonth{
+        width: 30%;
+        float: $left;
+        @media screen and (max-width: 800px){
+            @include textCenterMobile();
+            width: $widthFull;
+            margin-bottom: 20px;
+        }
+        h2{
+            padding-left: 19%;
+            padding-top: 60px;
+            font-size: 2.6em;
+            font-weight: 300;
+            padding-bottom: 25px;
+            @media screen and (max-width: 800px){
+                @include textCenterMobile();
+                width: $widthFull;
+                padding-left: 0;
+            }
+        }
+        img{
+            @include imgCenter();
+            @include radiusKimHyungPic();
+            width: 5em; 
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+/* Parameters for the fourth section of the home page (by Kim Hyung) */
+#fourthSectionHome{
+    width: $widthFull;
+    img{
+        @include fullWidthImg;
+        @media screen and (max-width: 800px){
+            margin-top: 40px;
+        }
+    }
+}
+
+/* Parameters for the fifth section of the home page (by Kim Hyung) */
+#fifthSectionHome{
+    width: $widthFull;
+    h1{
+        @include titleSection();
+        text-align:  $center;
+    }
+}
+
+/* Parameters for the sixth section of the home page (by Kim Hyung) */
+#sixthSectionHome{
+    background-color: #EBF2F5;
+    div{
+        width: 33%; 
+        float: $left;
+        font-weight: 300;
+        @media screen and (max-width: 800px){
+            width: $widthFull;
+            padding-left: 0;
+        }
+        p{
+            padding: 40px;
+            @media screen and (max-width: 800px){
+                padding-top: 0px;
+            }
+        }
+        span{
+            font-weight: 500;
+            text-decoration: underline;
+        }
+    }
+}
+
+/* Parameters for the footer */
+footer{
+    width: $widthFull;
+    background-color: $colorMenu;
+    float: $left;
+    text-align: $center;
+    p{
+        padding: 40px;
+        color: black;
+        font-weight: 300;
+    }
+}
+

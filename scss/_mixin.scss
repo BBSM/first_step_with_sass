@@ -1,0 +1,68 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 15, 2016, 10:24:11 AM
+    Author     : dmarez
+*/
+
+/* Parameters to center IMG */
+@mixin imgCenter(){
+    display: block;
+    margin: auto;
+}
+
+/* fullwidth IMG */
+@mixin fullWidthImg(){
+    width: $widthFull;
+    height: $heightAuto;
+}
+
+/* Border radius for the profile picture (top right in the menu) */
+@mixin radiusProfilePic(){
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;    
+    -moz-border-radius: 50%;
+}
+
+/* Border radius for the portrait of Kim Hyung */
+@mixin radiusKimHyungPic(){
+    border-radius: 3em;
+    -webkit-border-radius: 3em;
+    -khtml-border-radius: 3em;    
+    -moz-border-radius: 3em;
+}
+
+/* Parameters for the hover of the profile picture (top right in the menu) */
+@mixin rotationProfilePic(){
+    -ms-transform: rotate(360deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(360deg);
+    -webkit-transition: 1s; /* Safari */
+    transition:  1s;
+}
+
+/* Parameters for two title (best picture of the month and interview) */
+@mixin titleSection(){
+    font-size: 4em;
+    font-weight: 100;
+    padding-top: 90px;
+    padding-bottom: 90px; 
+    padding-left: 5%;
+    @media screen and (max-width: 900px){
+        font-size: 3em;
+    }
+    @media screen and (max-width: 600px){
+        font-size: 2em;
+    }
+}
+
+/* Align text to center when the device width is under 800px */
+@mixin textCenterMobile{
+    @media screen and (max-width: 800px){
+            text-align: $center;
+        }
+}

@@ -1,0 +1,328 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 15, 2016, 9:25:11 AM
+    Author     : dmarez
+*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 15, 2016, 9:27:01 AM
+    Author     : dmarez
+*/
+/* Color Variables */
+/* Size variables */
+/* Font Family Google */
+/* Disposition of the div / section / para etc... */
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 15, 2016, 10:24:11 AM
+    Author     : dmarez
+*/
+/* Parameters to center IMG */
+/* fullwidth IMG */
+/* Border radius for the profile picture (top right in the menu) */
+/* Border radius for the portrait of Kim Hyung */
+/* Parameters for the hover of the profile picture (top right in the menu) */
+/* Parameters for two title (best picture of the month and interview) */
+/* Align text to center when the device width is under 800px */
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 15, 2016, 9:26:37 AM
+    Author     : dmarez
+*/
+body {
+  font-family: "roboto", sans-serif; }
+
+/* Parameters for the Nav */
+nav {
+  width: 100%; }
+  nav h3 {
+    font-weight: 700;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 28px;
+    border-right: 1px solid #FFFFFF; }
+  nav ul {
+    padding-top: 34px;
+    padding-bottom: 34px; }
+    @media screen and (max-width: 1040px) {
+      nav ul {
+        display: none; } }
+    nav ul li {
+      display: inline-block; }
+      nav ul li > a {
+        text-decoration: none;
+        font-weight: 400;
+        color: black;
+        padding-left: 20px; }
+        nav ul li > a:hover {
+          color: #798285;
+          text-decoration: underline; }
+
+/* Parameters for the Submenu (mobile and tablet) */
+#submenu {
+  width: 85%;
+  background-color: #EDEDED; }
+  @media screen and (min-width: 1040px) {
+    #submenu {
+      display: none; } }
+  #submenu img {
+    width: 2em;
+    padding: 24.3px; }
+
+/* Parameters for the div which contains the name of the website (top left) */
+#websiteName {
+  float: left;
+  width: 20%;
+  background-color: #EDEDED; }
+  @media screen and (max-width: 1040px) {
+    #websiteName {
+      display: none; } }
+
+/* Parameters for the div which contains the menu links */
+#linkMenu {
+  float: left;
+  width: 65%;
+  background-color: #EDEDED; }
+
+/* Parameters for the div which contains the user picture (top right) */
+#profilePicture {
+  float: right;
+  width: 15%;
+  background-color: #EDEDED; }
+  @media screen and (max-width: 600px) {
+    #profilePicture {
+      padding-right: 20px; } }
+  #profilePicture img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    -moz-border-radius: 50%;
+    display: block;
+    margin: auto;
+    width: 4em;
+    height: 4em;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    #profilePicture img:hover {
+      -ms-transform: rotate(360deg);
+      /* IE 9 */
+      -webkit-transform: rotate(180deg);
+      /* Chrome, Safari, Opera */
+      transform: rotate(360deg);
+      -webkit-transition: 1s;
+      /* Safari */
+      transition: 1s; }
+
+/* First section of the home page. This section contains the best picture of the month (mountains) */
+#picUnderMenu {
+  width: 100%;
+  line-height: 0; }
+  #picUnderMenu img {
+    width: 100%;
+    height: auto;
+    z-index: 3;
+    margin-top: -1px; }
+
+/* Second section of the home page. This section contains a big title Best picture of the month) */
+#secondSectionHome {
+  width: 100%;
+  background-color: #0A0A0A; }
+  #secondSectionHome h1 {
+    font-size: 4em;
+    font-weight: 100;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-left: 5%;
+    color: white; }
+    @media screen and (max-width: 900px) {
+      #secondSectionHome h1 {
+        font-size: 3em; } }
+    @media screen and (max-width: 600px) {
+      #secondSectionHome h1 {
+        font-size: 2em; } }
+    @media screen and (max-width: 800px) {
+      #secondSectionHome h1 {
+        text-align: center; } }
+
+/* Class for the two paragraph into the thirdsection (just next to by Kim Hyung) */
+.paraThirdSectionHome {
+  width: 35%;
+  float: left; }
+  @media screen and (max-width: 800px) {
+    .paraThirdSectionHome {
+      width: 80%;
+      margin-left: 10%;
+      margin-right: 10%; } }
+  .paraThirdSectionHome p {
+    font-weight: 300;
+    padding-left: 20px;
+    padding-top: 60px;
+    padding-bottom: 40px; }
+    @media screen and (max-width: 800px) {
+      .paraThirdSectionHome p {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 30px;
+        padding-bottom: 20px; } }
+
+/* Parameters for the third section of the home page (by Kim Hyung) */
+#thirdSectionHome {
+  background-color: #FAFAFA; }
+  #thirdSectionHome #winnerPicMonth {
+    width: 30%;
+    float: left; }
+    @media screen and (max-width: 800px) {
+      #thirdSectionHome #winnerPicMonth {
+        width: 100%;
+        margin-bottom: 20px; } }
+  @media screen and (max-width: 800px) and (max-width: 800px) {
+    #thirdSectionHome #winnerPicMonth {
+      text-align: center; } }
+
+    #thirdSectionHome #winnerPicMonth h2 {
+      padding-left: 19%;
+      padding-top: 60px;
+      font-size: 2.6em;
+      font-weight: 300;
+      padding-bottom: 25px; }
+      @media screen and (max-width: 800px) {
+        #thirdSectionHome #winnerPicMonth h2 {
+          width: 100%;
+          padding-left: 0; } }
+  @media screen and (max-width: 800px) and (max-width: 800px) {
+    #thirdSectionHome #winnerPicMonth h2 {
+      text-align: center; } }
+
+    #thirdSectionHome #winnerPicMonth img {
+      display: block;
+      margin: auto;
+      border-radius: 3em;
+      -webkit-border-radius: 3em;
+      -khtml-border-radius: 3em;
+      -moz-border-radius: 3em;
+      width: 5em;
+      margin-top: 5px;
+      margin-bottom: 10px; }
+
+/* Parameters for the fourth section of the home page (by Kim Hyung) */
+#fourthSectionHome {
+  width: 100%; }
+  #fourthSectionHome img {
+    width: 100%;
+    height: auto; }
+    @media screen and (max-width: 800px) {
+      #fourthSectionHome img {
+        margin-top: 40px; } }
+
+/* Parameters for the fifth section of the home page (by Kim Hyung) */
+#fifthSectionHome {
+  width: 100%; }
+  #fifthSectionHome h1 {
+    font-size: 4em;
+    font-weight: 100;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-left: 5%;
+    text-align: center; }
+    @media screen and (max-width: 900px) {
+      #fifthSectionHome h1 {
+        font-size: 3em; } }
+    @media screen and (max-width: 600px) {
+      #fifthSectionHome h1 {
+        font-size: 2em; } }
+
+/* Parameters for the sixth section of the home page (by Kim Hyung) */
+#sixthSectionHome {
+  background-color: #EBF2F5; }
+  #sixthSectionHome div {
+    width: 33%;
+    float: left;
+    font-weight: 300; }
+    @media screen and (max-width: 800px) {
+      #sixthSectionHome div {
+        width: 100%;
+        padding-left: 0; } }
+    #sixthSectionHome div p {
+      padding: 40px; }
+      @media screen and (max-width: 800px) {
+        #sixthSectionHome div p {
+          padding-top: 0px; } }
+    #sixthSectionHome div span {
+      font-weight: 500;
+      text-decoration: underline; }
+
+/* Parameters for the footer */
+footer {
+  width: 100%;
+  background-color: #EDEDED;
+  float: left;
+  text-align: center; }
+  footer p {
+    padding: 40px;
+    color: black;
+    font-weight: 300; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*# sourceMappingURL=main.css.map */
